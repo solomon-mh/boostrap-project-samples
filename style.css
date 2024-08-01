@@ -1,0 +1,75 @@
+* {
+  --primary-color: #3498db;
+}
+body {
+  color: #555; /* Steel Gray */
+  font-family: "Roboto", sans-serif;
+}
+.project-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.hero h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+.link {
+  text-align: center;
+  margin-top: 0.5rem; /* Reduced margin-top for closer button placement */
+}
+.btn-primary {
+  width: 100%;
+  max-width: 200px;
+}
+.navbar {
+  background-color: #f8f9fa;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+.card-container {
+  margin-bottom: 1rem; /* Added margin-bottom to the card container for consistent spacing */
+}
+.img {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.image-container {
+  height: 350px;
+  overflow: hidden;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img img:hover {
+  transform: scale(1.05);
+}
